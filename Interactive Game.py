@@ -2,8 +2,10 @@
 import random
 
 def number_guessing_game():
-    print(" \n ---------Welcome to the Number Guessing Game!---------")
-    print("I'm thinking of a number between 1 and 100.")
+    print("\n"+ 30*"==")
+    print("Welcome to the Number Guessing Game!")
+    print(30*"=="+"\n")
+    print("You are thinking of a number between 1 and 100.")
 
     # Generate random number
     secret_number = random.randint(1, 10)
@@ -33,5 +35,6 @@ def number_guessing_game():
 
         except ValueError:
             print("Invalid input. Please enter a valid number.")
+
 
 number_guessing_game()
